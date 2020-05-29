@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.1 on win32)" generated="20200511 16:34:27.264" rpa="false">
+<suite id="s1" name="LoginTest" source="E:\OnlyForPython\SELENIUM\RobotFramework\PageObjectModelRobotFramework\test_case\LoginTest.robot">
+<test id="s1-t1" name="Sentrifugo Login Test">
+<kw name="Setup" library="Login">
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${app_url}</arg>
+<arg>${app_browser}</arg>
+</arguments>
+<msg timestamp="20200511 16:34:28.417" level="INFO">Opening browser 'chrome' to base url 'http://demo.sentrifugo.com/index.php/'.</msg>
+<status status="PASS" starttime="20200511 16:34:28.417" endtime="20200511 16:34:43.610"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200511 16:34:43.610" endtime="20200511 16:34:45.750"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:34:28.416" endtime="20200511 16:34:45.750"></status>
+</kw>
+<kw name="Input UserName" library="Login">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_text_username}</arg>
+</arguments>
+<status status="PASS" starttime="20200511 16:34:45.752" endtime="20200511 16:34:46.099"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_text_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200511 16:34:46.103" level="INFO">Typing text 'em01' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20200511 16:34:46.100" endtime="20200511 16:34:46.296"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:34:45.750" endtime="20200511 16:34:46.297"></status>
+</kw>
+<kw name="Input Password" library="Login">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${input_text_password}</arg>
+</arguments>
+<status status="PASS" starttime="20200511 16:34:46.298" endtime="20200511 16:34:46.367"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_text_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200511 16:34:46.368" level="INFO">Typing text 'sentrifugo' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20200511 16:34:46.367" endtime="20200511 16:34:46.508"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:34:46.297" endtime="20200511 16:34:46.508"></status>
+</kw>
+<kw name="Click To Login Button" library="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<msg timestamp="20200511 16:34:46.510" level="INFO">Clicking element 'id:loginsubmit'.</msg>
+<status status="PASS" starttime="20200511 16:34:46.509" endtime="20200511 16:34:53.420"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:34:46.508" endtime="20200511 16:34:53.421"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200511 16:34:58.423" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200511 16:34:53.421" endtime="20200511 16:34:58.423"></status>
+</kw>
+<kw name="Click To Logout Button" library="Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${user_logout_profile}</arg>
+</arguments>
+<msg timestamp="20200511 16:34:58.424" level="INFO">Clicking element 'xpath://*[@id='prof_name']'.</msg>
+<status status="PASS" starttime="20200511 16:34:58.423" endtime="20200511 16:34:58.492"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${logout_button}</arg>
+</arguments>
+<msg timestamp="20200511 16:34:58.492" level="INFO">Clicking element 'link:Logout'.</msg>
+<status status="PASS" starttime="20200511 16:34:58.492" endtime="20200511 16:35:00.296"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:34:58.423" endtime="20200511 16:35:00.296"></status>
+</kw>
+<kw name="Closer" library="Login">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200511 16:35:00.297" endtime="20200511 16:35:02.950"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200511 16:35:02.950" endtime="20200511 16:35:02.951"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:35:00.296" endtime="20200511 16:35:02.951"></status>
+</kw>
+<status status="PASS" starttime="20200511 16:34:28.415" endtime="20200511 16:35:02.951" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200511 16:34:27.268" endtime="20200511 16:35:02.952"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200511 16:34:27.338" level="ERROR">Error in file 'E:\OnlyForPython\SELENIUM\RobotFramework\PageObjectModelRobotFramework\test_case\LoginTest.robot' on line 2: Importing test library 'SelebiumLibrary' failed: ModuleNotFoundError: No module named 'SelebiumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  E:\OnlyForPython\SELENIUM\RobotFramework\robot-framework-example\venv\Scripts\robot.exe
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38\python38.zip
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38\DLLs
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38\lib
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv\lib\site-packages
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv\lib\site-packages\setuptools-40.8.0-py3.8.egg
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv\lib\site-packages\pip-19.0.3-py3.8.egg</msg>
+</errors>
+</robot>

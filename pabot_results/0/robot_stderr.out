@@ -1,0 +1,13 @@
+[ ERROR ] Error in file 'E:\OnlyForPython\SELENIUM\RobotFramework\PageObjectModelRobotFramework\test_case\LoginTest.robot' on line 2: Importing test library 'SelebiumLibrary' failed: ModuleNotFoundError: No module named 'SelebiumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  E:\OnlyForPython\SELENIUM\RobotFramework\robot-framework-example\venv\Scripts\robot.exe
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38\python38.zip
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38\DLLs
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38\lib
+  C:\Users\rahul\AppData\Local\Programs\Python\Python38
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv\lib\site-packages
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv\lib\site-packages\setuptools-40.8.0-py3.8.egg
+  e:\onlyforpython\selenium\robotframework\robot-framework-example\venv\lib\site-packages\pip-19.0.3-py3.8.egg
