@@ -1,5 +1,5 @@
 docutils==0.16
-numpy==1.18.4
+numpy==1.22.0
 pandas==1.0.3
 Pygments==2.6.1
 PyMySQL==0.9.3
